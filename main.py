@@ -7,7 +7,7 @@ def get_networks():
         if "Todos os Perfis de Usuários" in line:
             position = line.find(":")
             network = line[position + 2:]
-            password = information_command(network)
+            password = information_network(network)
             print(network + " - " + password)
 
 
