@@ -63,3 +63,9 @@ O resultado deste comando é todas as informações de rede. A senha é apresent
 **Execução**
 
 `py main.py`
+
+**Resultados do Script**
+
+`Rede 1 - 123456
+Rede 2 - 12345678`
+
