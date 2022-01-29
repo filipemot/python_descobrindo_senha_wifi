@@ -8,7 +8,7 @@ class TestMain(unittest.TestCase):
 
     @patch("subprocess.check_output")
     @patch("main.information_network")
-    def test_get_networks_with_profile_with_passwor(self, spy_information_network, spy_check_output):
+    def test_get_networks_with_profile_with_password(self, spy_information_network, spy_check_output):
         spy_check_output.return_value = "Todos os Perfis de Usuários: Rede 1\n"
         spy_information_network.return_value = "123456"
         self.assertEqual(main.get_networks(), ["Rede 1 - 123456"])
